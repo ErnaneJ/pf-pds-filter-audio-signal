@@ -51,10 +51,10 @@ Obtido em (freesound.org)[https://freesound.org/browse/].
 | ![dft_canal_direito](./graphics/dft_canal_direito.png) | ![espectro_canal_esq_interpolado](./graphics/espectro_canal_esq_interpolado.png) |
 | ![expectro_canal_esq](./graphics/expectro_canal_esq.png) | |
 
+---
 
-
-
-
-
-
-
+<div align="center">
+  Universidade Federal do Rio Grande do Norte - UFRN <br/>
+  Departamento de Engenharia de Computação e Automação - Centro de Tecnologia  <br/>
+  DCA0118 - PROCESSAMENTO DIGITAL DE SINAIS - Professor: TIAGO TAVARES LEITE BARROS
+</div>
