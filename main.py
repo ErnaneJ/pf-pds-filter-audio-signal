@@ -10,7 +10,7 @@ from scipy.signal import welch
 # Plote o sinal no domínio do tempo.
 
 # Carrega o arquivo
-samplerate, data = wavfile.read('piano.wav')
+samplerate, data = wavfile.read('./audios/piano.wav')
 data = data[:len(data)//2]
 
 # Carrega o arquivo em dois canais (audio estereo)
@@ -110,7 +110,7 @@ plt.show()
 # Fazendo uso da biblioteca pyFDA, projete um filtro passa-baixas digital, 
 # com resposta ao impulso finita (FIR), adequado para a interpolação por L = 3;
 
-h = 3*np.genfromtxt('./coeffk.csv', delimiter=',') # coeficientes x3 para compensar a interpolação
+h = 3*np.genfromtxt('./coefficients/coeffk.csv', delimiter=',') # coeficientes x3 para compensar a interpolação L=3
 
 plt.figure(7)
 plt.stem(h)
@@ -168,7 +168,7 @@ data_l3_inter = y
 
 audio = np.array([data_l3_inter, data_r3_inter]).T
 scaled = np.int16(audio/np.max(np.abs(audio)) * 32767)
-filename = './pianoLoop_interp_3.wav'
+filename = './audios/piano_interp_L3.wav'
 write(filename, samplerate*3, scaled)
 
 plt.figure(7, (14,4), dpi=160)
