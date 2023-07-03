@@ -25,17 +25,10 @@ python main.py # or python3 main.py
 - [Coeficientes](./coefficients/coeffk.csv)
 - Ferramenta [PyFDA](https://github.com/chipmuenk/pyFDA) utilizada
 
-## Audio
+## Audios
 
-Obtido em (freesound.org)[https://freesound.org/browse/].
-
-### Original
-
-<audio src="./piano.wav" controls preload></audio>
-
-### Pós interpolação
-
-<audio src="./piano_interp_L3.wav" controls preload></audio>
+- Original obtido em (freesound.org)[https://freesound.org/browse/]. 
+- [Audio original e pós interpolação.](./audios/)
 
 ## Gráficos obtidos
 
