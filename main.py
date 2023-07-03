@@ -6,6 +6,10 @@ from scipy.io import wavfile
 from scipy.io.wavfile import write
 from scipy.signal import welch
 
+
+def invert_arr(arr):
+    return [-x for x in arr]
+
 # ==================================| A | ================================== #
 # Plote o sinal no domínio do tempo.
 
@@ -173,18 +177,18 @@ write(filename, samplerate*3, scaled)
 
 plt.figure(7, (14,4), dpi=160)
 data_lx = np.linspace(0,len(data_l[:30])*1/samplerate, len(data_l[:30]))
-plt.plot(data_lx ,data_l[:30], color="red", label="canal esq")
+plt.plot(data_lx ,invert_arr(data_l[:30]), color="red", label="canal esq")
 data_l3x = np.linspace(0,len(data_l3[:90])*1/(2.93*samplerate), len(data_l3[:90]))
-plt.stem(data_l3x ,data_l3[:90], label="canal esq expandido", basefmt="black")
+plt.stem(data_l3x ,invert_arr(data_l3[:90]), label="canal esq expandido", basefmt="black")
 plt.legend()
 # plt.ylim(-0.1,2.5)
 plt.xlabel("tempo [s]")
 plt.show()
 
 plt.figure(7, (14,4), dpi=160)
-plt.stem(data_lx, data_l[:30], label="canal esq", basefmt="black")
+plt.stem(data_lx, invert_arr(data_l[:30]), label="canal esq", basefmt="black")
 data_l3_interx = np.linspace(0,len(data_l3[:90])*1/(2.93*samplerate), len(data_l3[:90]))
-plt.plot(data_l3_interx, data_l3_inter[13:103], label="canal esq interpolado", color="red")
+plt.plot(data_l3_interx, invert_arr(data_l3_inter[13:103]), label="canal esq interpolado", color="red")
 plt.legend()
 # plt.ylim(-0.3,3)
 plt.xlabel("tempo [s]")
@@ -192,18 +196,18 @@ plt.show()
 
 plt.figure(9, (14,4), dpi=160)
 data_rx = np.linspace(0,len(data_r[:30])*1/samplerate, len(data_r[:30]))
-plt.plot(data_rx, data_r[:30], color="red", label="canal dir")
+plt.plot(data_rx, invert_arr(data_r[:30]), color="red", label="canal dir")
 data_r3x = np.linspace(0,len(data_r3[:90])*1/(3.0*samplerate), len(data_r3[:90]))
-plt.stem(data_r3x, data_r3[:90], label="canal dir expandido", basefmt="black")
+plt.stem(data_r3x, invert_arr(data_r3[:90]), label="canal dir expandido", basefmt="black")
 plt.legend()
 # plt.ylim(-1.1,2.5)
 plt.xlabel("tempo [s]")
 plt.show()
 
 plt.figure(10, (14,4), dpi=160)
-plt.stem(data_rx, data_r[:30], label="canal dir", basefmt="black")
+plt.stem(data_rx, invert_arr(data_r[:30]), label="canal dir", basefmt="black")
 data_r3_interx = np.linspace(0,len(data_r3[:90])*1/(3.0*samplerate), len(data_r3[:90]))
-plt.plot(data_r3_interx, data_r3_inter[13:103], label="canal dir interpolado", color="red")
+plt.plot(data_r3_interx, invert_arr(data_r3_inter[13:103]), label="canal dir interpolado", color="red")
 plt.legend()
 # plt.ylim(-1.1,3)
 plt.xlabel("tempo [s]")
