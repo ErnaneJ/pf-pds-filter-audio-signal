@@ -37,10 +37,10 @@ python main.py # or python3 main.py
 | ![canal_direito](./graphics/canal_direito.png) | ![dft_canal_direito_2](./graphics/dft_canal_direito_2.png) |
 | ![canal_esquerdo](./graphics/canal_esquerdo.png) | ![dft_canal_direito_exp_L3](./graphics/dft_canal_direito_exp_L3.png) |
 | ![coeficientes_do_filtro_utilizado](./graphics/coeficientes_do_filtro_utilizado.png) | ![dft_canal_esquerdo](./graphics/dft_canal_esquerdo.png) |
-| ![comp_canal_dir_e_canal_dir_expandido](./graphics/comp_canal_dir_e_canal_dir_expandido.png) | ![espectro_canal_dir](./graphics/espectro_canal_dir.png) |
-| ![comp_canal_dir_e_canal_dir_interpolado](./graphics/comp_canal_dir_e_canal_dir_interpolado.png) | ![espectro_canal_dir_expandido](./graphics/espectro_canal_dir_expandido.png) |
-| ![comp_canal_esq_e_canal_esq_expandido](./graphics/comp_canal_esq_e_canal_esq_expandido.png) | ![espectro_canal_dir_interpolado](./graphics/espectro_canal_dir_interpolado.png) |
-| ![comp_canal_esq_e_canal_esq_interpolado](./graphics/comp_canal_esq_e_canal_esq_interpolado.png) | ![espectro_canal_esq_expandido](./graphics/espectro_canal_esq_expandido.png) |
+| ![comp_canal_dir_e_canal_dir_expandido](./graphics/comp_canal_dir_e_canal_dir_expandido_up.png) | ![espectro_canal_dir](./graphics/espectro_canal_dir.png) |
+| ![comp_canal_dir_e_canal_dir_interpolado](./graphics/comp_canal_dir_e_canal_dir_interpolado_up.png) | ![espectro_canal_dir_expandido](./graphics/espectro_canal_dir_expandido.png) |
+| ![comp_canal_esq_e_canal_esq_expandido](./graphics/comp_canal_esq_e_canal_esq_expandido_up.png) | ![espectro_canal_dir_interpolado](./graphics/espectro_canal_dir_interpolado.png) |
+| ![comp_canal_esq_e_canal_esq_interpolado](./graphics/comp_canal_esq_e_canal_esq_interpolado_up.png) | ![espectro_canal_esq_expandido](./graphics/espectro_canal_esq_expandido.png) |
 | ![dft_canal_direito](./graphics/dft_canal_direito.png) | ![espectro_canal_esq_interpolado](./graphics/espectro_canal_esq_interpolado.png) |
 | ![expectro_canal_esq](./graphics/expectro_canal_esq.png) | |
 
